@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html l ang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-...tu-código-de-integridad..." crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pinta Futbol?</title>
+</head>
+
+<body>
+    <!-- Inicio de header -->
+    <header>
+        <!--Imagen Principal-->
+        <div class="header__imagenPrincipal imagenIndex"></div>
+        <!-- Inicio nav -->
+        <nav class="header__menu">
+            <ul class="header__lista">
+                <li class="header__lista__link">
+                    <a href="./pages/futbol5.html">Futbol 5</a>
+                </li>
+
+                <li class="header__lista__link">
+                    <a href="./pages/futbol7.html">Futbol 7</a>
+                </li>
+
+                <li class="header__lista__link">
+                    <a href="./pages/basquet.html">Basquet</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin del nav -->
+    </header>
+    <!-- Fin header -->
+
+
+    <!-- inicio banner, video o imagenes de cancha de futbol -->
+    <main class="banner">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://fotos.perfil.com/2022/12/18/trim/1140/641/lionel-messi-world-cup-win-1475661.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.generallavalle.gob.ar/fotos/noticias/thumb/thumb_futbol-protocolo-deportes-49.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/messi.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <!-- fin del banner -->
+
+
+    <!-- Inicio secciones -->
+    <hr>
+    <h3>CANCHAS DE BASQUET Y FUTBOL</h3>
+    <section class="articulos">
+        <div class="card">
+            <img src="https://www.generallavalle.gob.ar/fotos/noticias/thumb/thumb_futbol-protocolo-deportes-49.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">F5 HEROES</h5>
+                <p class="card-text">21 E/16 Y 17</p>
+                <a href="./pages/canchaHeroes.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img//messi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">F7 CAMP NOU</h5>
+                <p class="card-text">43 E/ 60 Y 61</p>
+                <a href="./pages/canchaCampnou.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://fotos.perfil.com/2022/12/18/trim/1140/641/lionel-messi-world-cup-win-1475661.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TERCER TIEMPO</h5>
+                <p class="card-text">25 E/ 31 Y 32</p>
+                <a href="./pages/basquet.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+    <!-- Inicio footer (pie de pagina) -->
+    <footer class="footer footerFutbol">
+        <p class="footer__textoDisponibilidad">Actualmente disponible solo en La Plata</p>
+        <a class="footer__linkContacto" href="./pages/contacto.html">CONTACTO</a>
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    Facebook
+                </a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Whatsapp
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer__textoCopyright">Copyright Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a489a00f68.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
