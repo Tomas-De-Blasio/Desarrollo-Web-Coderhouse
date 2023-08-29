@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+@import "./utilities/variables.scss";
+@import "./utilities/mixins";
+@import "./views/home";
+@import "./views/futbol5";

@@ -1,0 +1,135 @@
+.header {
+
+    .header__menu {
+        .header__lista {
+            @include flex(space-around, center);
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            background-color: rgb(13, 11, 11);
+
+            &__link {
+                @include flex(center, center);
+                flex-grow: 1;
+                padding: 0.5rem 1rem;
+                transition: all 1s ease;
+
+                & a {
+                    @include link;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: rgb(255, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    margin: 5rem 0.5rem 5rem 0.5rem;
+}
+
+.titulo__3 {
+    @include titulo;
+    color: red;
+}
+
+.articulos {
+    @include flex(space-around, center);
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .card {
+        display: flex;
+        flex-basis: calc(100% / 3);
+        align-items: center;
+        gap: 10px;
+        flex: 1 1 clamp(300px, 30%, 400px);
+        color: white;
+        background-color: rgb(13, 11, 11);
+        transition: all 0.5s ease;
+
+        .card-img-top {
+            max-width: 450px;
+            margin: 5px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            @include flex(stretch, center);
+            flex-direction: column;
+            text-align: center;
+
+            .card-title{
+                @include titulo;
+            }
+            
+            .card-text{
+                font-family: $texto;
+            }
+
+            a {
+                font-family: $enlace;
+                border-color: rgb(0, 0, 0);
+                background-color: rgb(0, 0, 0);
+                color: rgb(13, 11, 11);
+                transition: all 1s ease;
+                color: white;
+
+                &:hover {
+                    background-color: red;
+                    border-color: red;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+
+.footer{
+    display: flex;
+    margin-top: 2rem;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    .footer__textoDisponibilidad{
+        font-family: $texto;
+        align-self: flex-start;
+    }
+    .footer__linkContacto{
+        @include link;
+        align-self: flex-start;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: rgb(203, 0, 0);
+        }
+
+    }
+    .footer__links{
+        align-self:flex-end;
+        transition: all 0.3s ease;
+
+        a{
+            @include link;
+        &:hover{
+            color: rgb(203, 0, 0);
+        }
+    }
+    }
+}

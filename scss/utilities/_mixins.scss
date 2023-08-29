@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin flex($justify, $aling) {
+    display: flex;
+    list-style-type: none;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+@mixin titulo {
+    font-family: $texto;
+    font-weight: bold;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: red;
+    font-family: $enlace;
+    font-weight: bold;
+    font-size: 2rem;
+}

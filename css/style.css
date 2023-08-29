@@ -1,298 +1,125 @@
-/*Selector universal*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-/*Fin del selector universal*/
-
-
-/*Inicio de la configuracion general*/
 body {
-    color: white;
-    background-color: black;
-    font-family: 'Rubik', sans-serif;
-}
+  background-color: black; }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(233, 5, 5);
-}
+img {
+  width: 100%; }
 
-
-
-
-/*--------------HEADER------------------------------*/
-
-header {
-    height: 450px;
-}
-
-.header__imagenPrincipal {
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-@media (max-width: 767px) {
-    .imagenIndex {
-        background-image: url(../img/Sin\ títuloimagenindex_vertical.png);
-    }
-}
-
-@media (min-width: 767px) {
-    .imagenIndex {
-        background-image: url(../img//imagen__Index22.png);
-    }
-}
-
-.header__lista {
+.header .header__menu .header__lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background-color: #0d0b0b; }
+  .header .header__menu .header__lista__link {
     display: flex;
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-}
-
-/*Links principales (Configuracion por cada link)*/
-.header__lista__link {
     flex-grow: 1;
-    text-align: center;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    transition: all 0.5s ease;
-}
+    padding: 0.5rem 1rem;
+    transition: all 1s ease; }
+    .header .header__menu .header__lista__link a {
+      text-decoration: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      transition: all 0.5s ease; }
+    .header .header__menu .header__lista__link:hover a {
+      color: white; }
+    .header .header__menu .header__lista__link:hover {
+      background-color: red; }
 
-.header__lista__link a {
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.header__lista__link:hover {
-    background-color: rgb(255, 0, 0);
-}
-
-.header__lista__link:hover a {
-    color: white;
-}
-
-
-
-a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: red;
-
-}
-
-/*links*/
-ul li {
-    font-size: 2rem;
-    font-weight: bold;
-    list-style-type: none;
-}
-
-/*Fin de los links*/
-
-
-
-/*------------------------MENU---------------------------*/
 .banner {
-    display: flex;
-    margin: 5rem 0 5rem 0;
-    justify-content: center;
-    
-}
+  margin: 5rem 0.5rem 5rem 0.5rem; }
 
-.carousel {
-    padding: 0 20px 0 20px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+.titulo__3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold; }
 
-
-
-/*Fin del banner*/
-
-
-/* ---------------------------ARTICULOS----------------------------*/
-/* Secciones */
 .articulos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.card {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  .articulos .card {
     display: flex;
     flex-basis: calc(100% / 3);
     align-items: center;
     gap: 10px;
     flex: 1 1 clamp(300px, 30%, 400px);
     color: white;
-    background-color: rgb(13, 11, 11);
-    transition: all 0.5 ease;
-    /*flex-grow: ;
-flex-shrink: ;
-flex-basis: ;
-padding: 0 1rem;*/
-}
+    background-color: #0d0b0b;
+    transition: all 0.5s ease; }
+    .articulos .card .card-img-top {
+      max-width: 450px;
+      margin: 5px; }
+    .articulos .card:hover {
+      transform: scale(1.1); }
+    .articulos .card .card-body {
+      display: flex;
+      list-style-type: none;
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; }
+      .articulos .card .card-body .card-title {
+        font-family: "Rubik", sans-serif;
+        font-weight: bold; }
+      .articulos .card .card-body .card-text {
+        font-family: "Rubik", sans-serif; }
+      .articulos .card .card-body a {
+        font-family: "Montserrat", sans-serif;
+        border-color: black;
+        background-color: black;
+        color: #0d0b0b;
+        transition: all 1s ease;
+        color: white; }
+        .articulos .card .card-body a:hover {
+          background-color: red;
+          border-color: red; }
 
-.card.card:hover {
-    transform: scale(1.05);
-} 
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content:stretch;
-    text-align: center;
-    
-}
-
-.card-body a {
-    border-color: white;
-    background-color: white;
-    color: rgb(13,11,11);
-    transition: all 0.5s ease;
-}
-
-
-.card-body a:hover {
-    background-color: red;
-    border-color: red;
-}
-
-
-/*-----------------FOOTER-------------------*/
-
-footer {
-    display: flex;
-    margin-top: 2rem;
-    height: 300px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__textoDisponibilidad {
+.footer {
+  display: flex;
+  margin-top: 2rem;
+  height: 300px;
+  flex-direction: column;
+  align-items: center; }
+  .footer .footer__textoDisponibilidad {
+    font-family: "Rubik", sans-serif;
+    align-self: flex-start; }
+  .footer .footer__linkContacto {
+    text-decoration: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
     align-self: flex-start;
-}
-
-.footer__links {
-    align-self:flex-end;
-    transition: all 0.1 ease;
-}
-
-.footer__links a:hover {
-    color: rgb(203, 0, 0);
-}
-
-.footer__linkContacto{
-    align-self: flex-start;
-}
-
-
-
-
-/*Fin del footer*/
-
-
-
-/*PAGINA FUTBOL 5*/
-
-/*HEADER*/
-.imagenFutbol5 {
-    background-image: url(../img/headerF5.png);
-}
-
-/*FIN DE HEADER*/
-
-/*ARTICULOS*/
-.articulosf5 {
-    margin-top: 100px;
-}
-
-/*FIN DE ARTICULOS*/
-
-
-/*PAGINA HEROES*/
-
-/*HEADER*/
-.imagenHeroesF5 {
-    background-image: url(../img/headerHeroes.png);
-    background-position: top;
-}
-
-/*FIN DE HEADER*/
-
-/*SECCIONES*/
-.menuCancha {
-    margin-top: 100px;
-    /*margin-bottom: 100px;*/
-}
-
-.menuCancha a {
-    color: aliceblue;
-}
-
-.menuCancha img {
-    height: 400px;
-}
-
-.seeciones {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/*FIN DE SECCIONES*/
-
-
-/*PAGINA BASQUET*/
-
-/*HEADER*/
-.bodyBasquet h3 {
-    color: #ff6800;
-}
-
-.bodyBasquet ul li a {
-    color: #ff6800;
-}
-
-.imagenBasquet {
-    background-image: url(../img/headerBasquet.png);
-}
-
-/*FIN DE HEADER*/
-
-
-/*FOOTER*/
-.footerBasquet {
-    background-image: url('../img/pelotasBasquet.jpg');
-}
-
-/*FIN DEL FOOTER*/
-
-
-/*CONTACTO*/
-.imagenContacto {
-    background-image: url(../img/headerContacto.png);
-}
-
-.menuContacto {
-    margin-top: 150px;
-    height: 400px;
-
-}
-
-/*FIN DE CONTACTO*/
+    transition: all 0.3s ease; }
+    .footer .footer__linkContacto:hover {
+      color: #cb0000; }
+  .footer .footer__links {
+    align-self: flex-end;
+    transition: all 0.3s ease; }
+    .footer .footer__links a {
+      text-decoration: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem; }
+      .footer .footer__links a:hover {
+        color: #cb0000; }

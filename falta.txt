@@ -1,3 +1,0 @@
-Header: Foto
-banner: tamaño de la foto y el link del gheader queda por fuera, estan separados por el margin pero se pisan.
-
