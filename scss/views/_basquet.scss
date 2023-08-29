@@ -1,4 +1,4 @@
-.headerF5 {
+.headerBasquet {
 
     .header__menu {
         .header__lista {
@@ -16,6 +16,7 @@
                 & a {
                     @include link;
                     transition: all 0.5s ease;
+                    color: orangered;
                 }
 
                 &:hover a {
@@ -23,16 +24,22 @@
                 }
 
                 &:hover {
-                    background-color: rgb(255, 0, 0);
+                    background-color: orangered;
                 }
             }
         }
     }
 }
+
 .separador {
     color:rgb(32, 30, 30); 
 }
-.articulosF5 {
+
+.titulo3{
+    color: orangered
+}
+
+.articulosBasquet {
     @include flex(space-around, center);
     gap: 2rem;
     margin: 0 auto;
@@ -44,13 +51,13 @@
 
     .card {
         display: flex;
+        flex-basis: calc(100% / 3);
         align-items: center;
         gap: 10px;
         flex: 1 1 clamp(300px, 30%, 400px);
         color: white;
         background-color: rgb(13, 11, 11);
         transition: all 0.5s ease;
-        max-width: 40%;
         .card-img-top {
             max-width: 450px;
             margin: 5px;
@@ -64,7 +71,7 @@
             @include flex(stretch, center);
             flex-direction: column;
             text-align: center;
-
+            
             .card-title{
                 @include titulo;
             }
@@ -82,8 +89,8 @@
                 color: white;
 
                 &:hover {
-                    background-color: red;
-                    border-color: red;
+                    background-color: orangered;
+                    border-color: orangered;
                     
                 }
             }
@@ -93,7 +100,26 @@
 }
 
 
-.footerF5 {
+.seccionLink{
+    @include flex(space-around, center);
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    &__item{
+        display: flex;
+        flex-basis: calc(100% / 2);
+        align-items: center;
+        gap: 10px;
+        flex: 1 1 clamp(300px, 30%, 400px);
+    }
+}
+
+
+.footerBasquet{
     display: flex;
     margin-top: 2rem;
     height: 300px;
@@ -107,22 +133,24 @@
     }
     .footer__linkContacto{
         @include link;
+        color:orangered;
         align-self: flex-start;
         transition: all 0.3s ease;
 
         &:hover{
-            color: rgb(203, 0, 0);
+            color: rgb(189, 52, 2);
         }
 
     }
     .footer__links{
         align-self:flex-end;
         transition: all 0.3s ease;
-
+        
         a{
             @include link;
+            color:orangered;
         &:hover{
-            color: rgb(203, 0, 0);
+            color: rgb(189, 52, 2);
         }
     }
     }

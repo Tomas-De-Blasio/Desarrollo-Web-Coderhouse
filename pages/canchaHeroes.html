@@ -6,54 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Página de una de las canchas disponibles de futbol 5, Heroes, ubicada en La Plata">
+
     <title>Heroes: Futbol 5</title>
 </head>
 
 <body>
     <!-- Inicio de header -->
-    <header>
-        <!--Imagen Principal-->
-        <div class="imagenPrincipal imagenHeroesF5"></div>
-        <!-- Inicio nav -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
+    <!-- Inicio de header -->
+    <header class="headerF5">
+    <!--Imagen Principal-->
+    <div class="header__imagenPrincipalF5">
+        <img src="../img/headerHeroes.png" alt="imagen principal de la pagina sobre Heroes">
+    </div>
+    <!-- Inicio nav -->
+    <nav class="header__menu">
+        <ul class="header__lista">
+            <li class="header__lista__link">
+                <a href="../index.html">Inicio</a>
+            </li>
 
-                    <li>
-                        <a href="../pages/futbol5.html">Futbol 5</a>
-                    </li>
+            <li class="header__lista__link">
+                <a href="../pages/futbol5.html">Futbol 5</a>
+            </li>
 
-                    <li>
-                        <a href="../pages/futbol7.html">Futbol 7</a>
-                    </li>
+            <li class="header__lista__link">
+                <a href="../pages/futbol7.html">Futbol 7</a>
+            </li>
 
-                    <li>
-                        <a href="../pages/basquet.html">Basquet</a>
-                    </li>
-                </ul>
-            </nav> 
-        <!-- Fin del nav -->
-    </header>
-    <!-- Fin header -->
+            <li class="header__lista__link">
+                <a href="../pages/basquet.html">Basquet</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Fin del nav -->
+</header>
+<!-- Fin header -->
 
 
     <!-- inicio banner, video o imagenes de cancha de futbol -->
+    <h3 class="titulo3">Información</h3>
     <main class="menuCancha">
-        <section class="seccion">
-            <hr>
+
+        <section class="seccionInfo">
+            <div class="seccionInfo__item">
             <h3>PRECIO</h3>
             <p>$1500 p/hora</p>
+            </div>
+
+            <div class="seccionInfo__item">
             <h3>DIRECCION</h3>
             <p>60 e/135 y 136</p>
+            </div>
+
+            <div class="seccionInfo__item">
             <h3>HORARIOS</h3>
             <p>Lunes a Sabados de 10:00 a 20:00 hs</p>
-            <hr>
+            </div>
+            
         </section>
 
-        <section class="seccion">
-            <h3>RESEVALA AHORA!</h3>
+        <hr class="separador">
+
+        <section class="seccionContacto">
             <ul>
                 <li><a href="">LLAMAR</a></li>
                 <li><a href="https://web.whatsapp.com/" target="_blank">ENVIAR WSP</a></li>
@@ -61,38 +76,48 @@
                 <li><a href="https://www.facebook.com/futbol5heroes/" target="_blank">PAGINA WEB</a></li>   
             </ul>
         </section>
-        
-        <section class="seccion">
-            <hr>
-            <h3>IMAGENES</h3>
-            <img src="https://scontent.faep9-2.fna.fbcdn.net/v/t1.6435-9/34199794_750635755326239_3041507775294210048_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9267fe&_nc_ohc=D7S7dFo7SqwAX_8Ug-Y&_nc_ht=scontent.faep9-2.fna&oh=00_AfCc0FZAEEvTcu4H643-W-8CBDRvF7J-4F--K_oyIUlttQ&oe=64A6B018" alt="">
-            <img src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/33814857_747453025644512_450445080398921728_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=C7AcCtLfWL0AX-q_KfY&_nc_ht=scontent.faep9-1.fna&oh=00_AfC-BdR64kddbpQpunWvA2pa23hqv6ryRr4QrUNGSNmYxw&oe=64A6BA89" alt="">
-            <hr>
-        </section>
+        <hr class="separador">
+
+        <section class="seccionImg">
+            <h3 class="titulo3">IMAGENES</h3>
+            <img src="https://viapais.com.ar/resizer/5WZtSwRyYgjv9pjptIB7K0MNJ5Q=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/MY2TSYZYHEYTQNRWMEZDKOBUGM.jpg" alt="Imagen 1 de la cancha de futbol 5 Heroes ubicada en La Plata">
+            <img src="https://www.hoysejuega.com/uploads/Modules/ImagenesComplejos/800_600_la-cancha-f%C3%BAtbol-5-y-6-.-2.jpg" alt="Imagen 2 de la cancha de futbol 5 Heroes ubicada en La Plata">
     </main>
 
     <!-- fin del banner -->
 
 
+    <hr class="separador">
     <!-- Inicio footer (pie de pagina) -->
-    <footer class="footer footerFutbol">
-        <p class="texto1">Actualmente disponible solo en La Plata</p>
-        <ul class="linksFooter">
-            <li>
-                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">Facebook</a>
+    <footer class="footerF5">
+        <p class="footer__textoDisponibilidad">Actualmente disponible solo en La Plata</p>
+        <a class="footer__linkContacto" href="../pages/contacto.html">CONTACTO</a>
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    Facebook
+                </a>
             </li>
-            
-            <li>
-                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">Instagram</a>
+
+            <li class="footer__links__item">
+                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
             </li>
-            
-            <li>
-                <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+
+            <li class="footer__links__item">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Whatsapp
+                </a>
             </li>
         </ul>
-        
-        <p class="texto2">Copyright Todos los derechos reservados</p>
+
+        <p class="footer__textoCopyright">Copyright Todos los derechos reservados</p>
     </footer>
+
 </body>
 
 </html>

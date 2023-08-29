@@ -5,103 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-...tu-código-de-integridad..." crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+
+    <meta name="description" content="Página en donde encontraras las mejores canchas de  basquet de la ciudad de La Plata, actualmente solo esta disponible para la ciudad de la plata, mas adelante para todo Buenos Aires!">
     <title>Basquet</title>
 </head>
 
 <body class="bodyBasquet">
     <!-- Inicio de header -->
-    <header>
+    <header class="headerBasquet">
         <!--Imagen Principal-->
-        <div class="imagenPrincipal imagenBasquet"></div>
+        <div class="header__imagenPrincipal">
+            <img src="../img/headerBasquet.png" alt="Imagen principal de la pagina de basquet">
+        </div> 
         <!-- Inicio nav -->
-        <nav>
-            <ul>
-                <li>
+        <nav class="header__menu">
+            <ul class="header__lista">
+                <li class="header__lista__link">
                     <a href="../index.html">Inicio</a>
                 </li>
 
-                <li>
+                <li class="header__lista__link">
                     <a href="../pages/futbol5.html">Futbol 5</a>
                 </li>
 
-                <li>
+                <li class="header__lista__link">
                     <a href="../pages/futbol7.html">Futbol 7</a>
                 </li>
-            
-                <li>
+
+                <li class="header__lista__link">
                     <a href="../pages/basquet.html">Basquet</a>
                 </li>
             </ul>
         </nav>
-    <!-- Fin del nav -->
+        <!-- Fin del nav -->
     </header>
     <!-- Fin header -->
 
+    <hr class="separador">
 
-<!-- Inicio secciones -->
-<section class="articulosf5">
-    <hr>
-    <h3>TODAS LAS CANCHAS</h3>   
-    <div class="articulo">
-        <article>
-            <img src="https://colegioclubuniversitario.edu.ar/wp-content/uploads/WhatsApp-Image-2022-06-08-at-11.04.45-AM-1-1024x576.jpeg" alt="">
-            <h3>CANCHA BASQUET 3X3</h3>
-            <p>131 e/ 34 y 35</p>
-            <a href="../pages/canchaHeroes.html">Reservala!</a>
-        </article>
-    </div>
+    <!-- Inicio secciones -->
+    <section class="articulosBasquet">
+        <div class="card">
+            <img src="https://cdn1.eldia.com/032018/1519979084829.jpg"
+                class="card-img-top" alt="Cancha de basquet del Club Universal ubicado en La plata">
+            <div class="card-body">
+                <h5 class="card-title">CLUB UNIVERSAL</h5>
+                <p class="card-text">25 E/57 Y 58</p>
+                <a href="../pages/basquet.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+        </div>
 
-    <div class="articulo">
-        <article>
-            <img src="https://scontent.faep9-1.fna.fbcdn.net/v/t39.30808-6/272075622_443182344202350_6962860538875866587_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=WdtQD6J4lLMAX9vWvd5&_nc_ht=scontent.faep9-1.fna&oh=00_AfDWconHcSuGaf1oS3q1RhtDROI33lOMeaFZgJ6yhU-4sg&oe=6484976A" alt="">
-            <h3>CANCHA BASQUET EL DESAFIO</h3>
-            <p>25 e/ 70 y 71</p>
-            <a href="../pages/canchaCampnou.html">Reservala!</a>
-        </article>
-    </div>
-    <hr>
-</section> 
-<section >
-    <h3>BASQUET EN LA PLATA</h3>
-    <a href="http://www.apdeb.com.ar/MAYORES2023_PRIMERA_FIXTURE_APERTURA.html" target="_blank">
-        <img src="http://www.apdeb.com.ar/Img23/PRIMERA%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="">
-    </a>
-    <a href="http://www.apdeb.com.ar/MAYORES2023_SEGUNDA_FIXTURE_APERTURA.html" target="_blank">
-        <img src="http://www.apdeb.com.ar/Img23/SEGUNDA%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="">
-    </a>
-    <a href="http://www.apdeb.com.ar/MAYORES2023_PROMOCIONAL_FIXTURE_APERTURA.html" target="_blank">
-        <img src="http://www.apdeb.com.ar/Img23/PROMOCIONAL%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="">
-    </a>
-    <a href="http://www.apdeb.com.ar/SUB23_FIXTURES.html" target="_blank">
-        <img src="http://www.apdeb.com.ar/Img23/SUB%2023%20CARTEL%20FIXTURES.jpg" alt="">
-    </a>
-    <hr>
-</section>
-<!--Fin de las secciones-->
+        <div class="card">
+            <img src="https://pbs.twimg.com/media/EL_iLC0X0AU6D9V.jpg"
+                class="card-img-top" alt="Cancha de basquet del Club Estudiantes de La Plata ubicado en La plata">
+            <div class="card-body">
+                <h5 class="card-title">ESTUDIANTES DE LA PLATA</h5>
+                <p class="card-text">1 Y 57</p>
+                <a href="../pages/basquet.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+        </div>
 
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Polideportivo_GELP.jpg/1200px-Polideportivo_GELP.jpg"
+                class="card-img-top" alt="Cancha de basquet del Club Gimnasia y Esgrima La Plata ubicado en La plata">
+            <div class="card-body">
+                <h5 class="card-title">GIMNASIA LA PLATA</h5>
+                <p class="card-text">21 E/16 Y 17</p>
+                <a href="../pages/basquet.html" class="btn btn-primary">RESERVALA!</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <hr class="separador">
+
+    <h3 class="titulo3">Basquet en La Plata</h3>
+    <section class="seccionLink">
+        <a class="seccionLink__item" href="http://www.apdeb.com.ar/MAYORES2023_SEGUNDA_FIXTURE_APERTURA.html" target="_blank">
+            <img src="http://www.apdeb.com.ar/Img23/SEGUNDA%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="Icono con informacion sobre basquet amateur en La Plata">
+        </a>
+        <a  href="http://www.apdeb.com.ar/MAYORES2023_PROMOCIONAL_FIXTURE_APERTURA.html" target="_blank">
+        <a class="seccionLink__item" href="http://www.apdeb.com.ar/MAYORES2023_PROMOCIONAL_FIXTURE_APERTURA.html" target="_blank">
+            <img src="http://www.apdeb.com.ar/Img23/PROMOCIONAL%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="Icono con informacion sobre basquet amateur en La Plata">
+        </a>
+        <a class="seccionLink__item" href="http://www.apdeb.com.ar/SUB23_FIXTURES.html" target="_blank">
+            <img src="http://www.apdeb.com.ar/Img23/SUB%2023%20CARTEL%20FIXTURES.jpg" alt="Icono con informacion sobre basquet amateur en La Plata">
+        </a>
+        <a  class="seccionLink__item" href="http://www.apdeb.com.ar/MAYORES2023_PRIMERA_FIXTURE_APERTURA.html" target="_blank">
+            <img src="http://www.apdeb.com.ar/Img23/PRIMERA%20APERTURA%20FIXTURE%20CARTELERA%20500.jpg" alt="Icono con informacion sobre basquet amateur en La Plata">
+        </a>
+        <hr>
+    </section>
+    <!--Fin de las secciones-->
+
+
+
+    <hr class="separador">
 
 
     <!-- Inicio footer (pie de pagina) -->
-    <footer class="footer footerBasquet">
-        <p class="texto1">Actualmente disponible solo en La Plata</p>
-        <ul class="linksFooter">
-            <li>
-                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">Facebook</a>
+    <footer class="footerBasquet">
+        <p class="footer__textoDisponibilidad">Actualmente disponible solo en La Plata</p>
+        <a class="footer__linkContacto" href="../pages/contacto.html">CONTACTO</a>
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    Facebook
+                </a>
             </li>
-            
-            <li>
-                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">Instagram</a>
+
+            <li class="footer__links__item">
+                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
             </li>
-            
-            <li>
-                <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+
+            <li class="footer__links__item">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Whatsapp
+                </a>
             </li>
         </ul>
-        
-        <p class="texto2">Copyright Todos los derechos reservados</p>
+
+        <p class="footer__textoCopyright">Copyright Todos los derechos reservados</p>
     </footer>
 
+        <p class="texto2">Copyright Todos los derechos reservados</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a489a00f68.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

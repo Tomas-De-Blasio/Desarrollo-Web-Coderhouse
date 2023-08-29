@@ -32,67 +32,53 @@
 .separador {
     color:rgb(32, 30, 30); 
 }
-.articulosF5 {
-    @include flex(space-around, center);
-    gap: 2rem;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+.titulo3{
+    color: red;
+}
+.seccionInfo{
+    display: flex;
     flex-wrap: wrap;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-    .card {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex: 1 1 clamp(300px, 30%, 400px);
-        color: white;
-        background-color: rgb(13, 11, 11);
-        transition: all 0.5s ease;
-        max-width: 40%;
-        .card-img-top {
-            max-width: 450px;
-            margin: 5px;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        .card-body {
-            @include flex(stretch, center);
-            flex-direction: column;
-            text-align: center;
-
-            .card-title{
-                @include titulo;
-            }
-            
-            .card-text{
-                font-family: $texto;
-            }
-
-            a {
-                font-family: $enlace;
-                border-color: rgb(0, 0, 0);
-                background-color: rgb(0, 0, 0);
-                color: rgb(13, 11, 11);
-                transition: all 1s ease;
-                color: white;
-
-                &:hover {
-                    background-color: red;
-                    border-color: red;
-                    
-                }
-            }
-        }
-
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%; /* El contenedor se ajustará al ancho de la página */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &__item{
+        width: calc(25% - 20px); /* Ajuste del ancho y espacio para el margen */
+        background-color: #141111;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
     }
+
 }
 
-
+.seccionContacto{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    a{
+        @include link;
+        text-decoration: none;
+    &:hover{
+        color: rgb(203, 0, 0);
+    }
+}
+}
+.seccionImg{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    & img{
+        max-width: 40%;
+        padding-left: 2rem;
+    padding-right: 2rem;
+    }
+}
 .footerF5 {
     display: flex;
     margin-top: 2rem;

@@ -1,10 +1,12 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  color: white; }
 
 img {
   width: 100%; }
@@ -27,6 +29,7 @@ img {
     transition: all 1s ease; }
     .header .header__menu .header__lista__link a {
       text-decoration: none;
+      list-style-type: none;
       color: red;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
@@ -37,12 +40,16 @@ img {
     .header .header__menu .header__lista__link:hover {
       background-color: red; }
 
+.separador {
+  color: #201e1e; }
+
 .banner {
   margin: 5rem 0.5rem 5rem 0.5rem; }
 
 .titulo__3 {
   font-family: "Rubik", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  color: red; }
 
 .articulos {
   display: flex;
@@ -98,12 +105,15 @@ img {
   margin-top: 2rem;
   height: 300px;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
   .footer .footer__textoDisponibilidad {
     font-family: "Rubik", sans-serif;
     align-self: flex-start; }
   .footer .footer__linkContacto {
     text-decoration: none;
+    list-style-type: none;
     color: red;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -117,9 +127,476 @@ img {
     transition: all 0.3s ease; }
     .footer .footer__links a {
       text-decoration: none;
+      list-style-type: none;
       color: red;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       font-size: 2rem; }
       .footer .footer__links a:hover {
+        color: #cb0000; }
+
+.headerF5 .header__menu .header__lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background-color: #0d0b0b; }
+  .headerF5 .header__menu .header__lista__link {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    transition: all 1s ease; }
+    .headerF5 .header__menu .header__lista__link a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      transition: all 0.5s ease; }
+    .headerF5 .header__menu .header__lista__link:hover a {
+      color: white; }
+    .headerF5 .header__menu .header__lista__link:hover {
+      background-color: red; }
+
+.separador {
+  color: #201e1e; }
+
+.articulosF5 {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  .articulosF5 .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    color: white;
+    background-color: #0d0b0b;
+    transition: all 0.5s ease;
+    max-width: 40%; }
+    .articulosF5 .card .card-img-top {
+      max-width: 450px;
+      margin: 5px; }
+    .articulosF5 .card:hover {
+      transform: scale(1.1); }
+    .articulosF5 .card .card-body {
+      display: flex;
+      list-style-type: none;
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; }
+      .articulosF5 .card .card-body .card-title {
+        font-family: "Rubik", sans-serif;
+        font-weight: bold; }
+      .articulosF5 .card .card-body .card-text {
+        font-family: "Rubik", sans-serif; }
+      .articulosF5 .card .card-body a {
+        font-family: "Montserrat", sans-serif;
+        border-color: black;
+        background-color: black;
+        color: #0d0b0b;
+        transition: all 1s ease;
+        color: white; }
+        .articulosF5 .card .card-body a:hover {
+          background-color: red;
+          border-color: red; }
+
+.footerF5 {
+  display: flex;
+  margin-top: 2rem;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .footerF5 .footer__textoDisponibilidad {
+    font-family: "Rubik", sans-serif;
+    align-self: flex-start; }
+  .footerF5 .footer__linkContacto {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: flex-start;
+    transition: all 0.3s ease; }
+    .footerF5 .footer__linkContacto:hover {
+      color: #cb0000; }
+  .footerF5 .footer__links {
+    align-self: flex-end;
+    transition: all 0.3s ease; }
+    .footerF5 .footer__links a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem; }
+      .footerF5 .footer__links a:hover {
+        color: #cb0000; }
+
+.headerBasquet .header__menu .header__lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background-color: #0d0b0b; }
+  .headerBasquet .header__menu .header__lista__link {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    transition: all 1s ease; }
+    .headerBasquet .header__menu .header__lista__link a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      transition: all 0.5s ease;
+      color: orangered; }
+    .headerBasquet .header__menu .header__lista__link:hover a {
+      color: white; }
+    .headerBasquet .header__menu .header__lista__link:hover {
+      background-color: orangered; }
+
+.separador {
+  color: #201e1e; }
+
+.titulo3 {
+  color: orangered; }
+
+.articulosBasquet {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  .articulosBasquet .card {
+    display: flex;
+    flex-basis: calc(100% / 3);
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    color: white;
+    background-color: #0d0b0b;
+    transition: all 0.5s ease; }
+    .articulosBasquet .card .card-img-top {
+      max-width: 450px;
+      margin: 5px; }
+    .articulosBasquet .card:hover {
+      transform: scale(1.1); }
+    .articulosBasquet .card .card-body {
+      display: flex;
+      list-style-type: none;
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; }
+      .articulosBasquet .card .card-body .card-title {
+        font-family: "Rubik", sans-serif;
+        font-weight: bold; }
+      .articulosBasquet .card .card-body .card-text {
+        font-family: "Rubik", sans-serif; }
+      .articulosBasquet .card .card-body a {
+        font-family: "Montserrat", sans-serif;
+        border-color: black;
+        background-color: black;
+        color: #0d0b0b;
+        transition: all 1s ease;
+        color: white; }
+        .articulosBasquet .card .card-body a:hover {
+          background-color: orangered;
+          border-color: orangered; }
+
+.seccionLink {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  .seccionLink__item {
+    display: flex;
+    flex-basis: calc(100% / 2);
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 clamp(300px, 30%, 400px); }
+
+.footerBasquet {
+  display: flex;
+  margin-top: 2rem;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .footerBasquet .footer__textoDisponibilidad {
+    font-family: "Rubik", sans-serif;
+    align-self: flex-start; }
+  .footerBasquet .footer__linkContacto {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: orangered;
+    align-self: flex-start;
+    transition: all 0.3s ease; }
+    .footerBasquet .footer__linkContacto:hover {
+      color: #bd3402; }
+  .footerBasquet .footer__links {
+    align-self: flex-end;
+    transition: all 0.3s ease; }
+    .footerBasquet .footer__links a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      color: orangered; }
+      .footerBasquet .footer__links a:hover {
+        color: #bd3402; }
+
+.headerF5 .header__menu .header__lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background-color: #0d0b0b; }
+  .headerF5 .header__menu .header__lista__link {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    transition: all 1s ease; }
+    .headerF5 .header__menu .header__lista__link a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      transition: all 0.5s ease; }
+    .headerF5 .header__menu .header__lista__link:hover a {
+      color: white; }
+    .headerF5 .header__menu .header__lista__link:hover {
+      background-color: red; }
+
+.separador {
+  color: #201e1e; }
+
+.titulo3 {
+  color: red; }
+
+.seccionInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 100%;
+  /* El contenedor se ajustará al ancho de la página */
+  margin: 0 auto;
+  /* Centrar el contenedor en la página */
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .seccionInfo__item {
+    width: calc(25% - 20px);
+    /* Ajuste del ancho y espacio para el margen */
+    background-color: #141111;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px; }
+
+.seccionContacto {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center; }
+  .seccionContacto a {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none; }
+    .seccionContacto a:hover {
+      color: #cb0000; }
+
+.seccionImg {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .seccionImg img {
+    max-width: 40%;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+
+.footerF5 {
+  display: flex;
+  margin-top: 2rem;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .footerF5 .footer__textoDisponibilidad {
+    font-family: "Rubik", sans-serif;
+    align-self: flex-start; }
+  .footerF5 .footer__linkContacto {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: flex-start;
+    transition: all 0.3s ease; }
+    .footerF5 .footer__linkContacto:hover {
+      color: #cb0000; }
+  .footerF5 .footer__links {
+    align-self: flex-end;
+    transition: all 0.3s ease; }
+    .footerF5 .footer__links a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem; }
+      .footerF5 .footer__links a:hover {
+        color: #cb0000; }
+
+.headerContacto .header__menu .header__lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background-color: #0d0b0b; }
+  .headerContacto .header__menu .header__lista__link {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    transition: all 1s ease; }
+    .headerContacto .header__menu .header__lista__link a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      transition: all 0.5s ease; }
+    .headerContacto .header__menu .header__lista__link:hover a {
+      color: white; }
+    .headerContacto .header__menu .header__lista__link:hover {
+      background-color: red; }
+
+.separador {
+  color: #201e1e; }
+
+.formulario {
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 100%;
+  /* El contenedor se ajustará al ancho de la página */
+  margin: 0 auto;
+  /* Centrar el contenedor en la página */ }
+  .formulario__item {
+    width: calc(25% - 20px);
+    /* Ajuste del ancho y espacio para el margen */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px; }
+
+.boton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s; }
+
+.footerContacto {
+  display: flex;
+  margin-top: 2rem;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .footerContacto .footer__textoDisponibilidad {
+    font-family: "Rubik", sans-serif;
+    align-self: flex-start; }
+  .footerContacto .footer__linkContacto {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: flex-start;
+    transition: all 0.3s ease; }
+    .footerContacto .footer__linkContacto:hover {
+      color: #cb0000; }
+  .footerContacto .footer__links {
+    align-self: flex-end;
+    transition: all 0.3s ease; }
+    .footerContacto .footer__links a {
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 2rem; }
+      .footerContacto .footer__links a:hover {
         color: #cb0000; }

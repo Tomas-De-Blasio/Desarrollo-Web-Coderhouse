@@ -4,92 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Pagina destinada a la antencion al cliente, por si ocurre algun problema en esta o tienes alguna duda de como funciona la pagina">
+
     <title>Contacto</title>
 </head>
 
 <body>
     <!-- Inicio de header -->
-    <header>
+    <header class="headerContacto">
         <!--Imagen Principal-->
-        <div class="imagenPrincipal imagenContacto"></div>
+        <!--Imagen Principal-->
+        <div class="header__imagenPrincipal">
+            <img src="../img/headerContacto.png" alt="">
+        </div>
         <!-- Inicio nav -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
+        <nav class="header__menu">
+            <ul class="header__lista">
+                <li class="header__lista__link">
+                    <a href="../index.html">Inicio</a>
+                </li>
 
-                    <li>
-                        <a href="../pages/futbol5.html">Futbol 5</a>
-                    </li>
+                <li class="header__lista__link">
+                    <a href="../pages/futbol5.html">Futbol 5</a>
+                </li>
 
-                    <li>
-                        <a href="../pages/futbol7.html">Futbol 7</a>
-                    </li>
-                
-                    <li>
-                        <a href="../pages/basquet.html">Basquet</a>
-                    </li>
-                </ul>
-            </nav> 
+                <li class="header__lista__link">
+                    <a href="../pages/futbol7.html">Futbol 7</a>
+                </li>
+
+                <li class="header__lista__link">
+                    <a href="../pages/basquet.html">Basquet</a>
+                </li>
+            </ul>
+        </nav>
         <!-- Fin del nav -->
     </header>
     <!-- Fin header -->
 
     <!--Formulario-->
     <main class="menuContacto">
-    <hr>
-    <div class="formulario">
-    <label for="nombre">Nombre</label>
-    <input type="text" required id="nombre"/> <br />
+        <hr class="separador">
 
-    <label for="email">Email</label>
-    <input type="email" required id="email" /> <br />
+        <div class="formulario">
 
-    <label for="Telefono">Telefono</label>
-    <input type="text" required id="Telefono" /> <br />
+            <div class="fomrulario__item">
+                <label class for="nombre">Nombre</label>
+                <input type="text" required id="nombre" /> <br />
+            </div>
 
-    <input type="date" ><br>
-    
-    <!--Area de texto-->
+            <div class="fomrulario__item">
+                <label for="email">Email</label>
+                <input type="email" required id="email" /> <br />
+            </div>
+            <div class="fomrulario__item">
+                <label for="Telefono">Telefono</label>
+                <input type="text" required id="Telefono" /> <br />
+            </div>
+            <div class="fomrulario__item">
+                <input type="date"><br>
+            </div>
 
-    <label for=""></label><br>
-    <textarea name="" id="" cols="70" rows="10" placeholder="Escriba algun comentario"></textarea>
-    <br />
+            <!--Area de texto-->
 
-    <!--Fin del area de texto-->
+            <label for=""></label><br>
+            <textarea name="" id="" cols="70" rows="10" placeholder="Escriba algun comentario"></textarea>
+            <br />
+        </div>
+        <!--Fin del area de texto-->
 
-    <!--Botones-->
-    <input type="submit" />
-    <input type="reset" /><br />
-    <!--Fin de los botones-->
-    <hr>
-    </div>
+        <!--Botones-->
+        <input class="boton" type="submit" />
+        <input class="boton" type="reset" /><br />
+        <!--Fin de los botones-->
+        </div>
     </main>
-<!--Fin del formulario-->
+    <!--Fin del formulario-->
+
+
+    <hr class="separador">
 
     <!-- Inicio footer (pie de pagina) -->
-    <footer class="footer footerFutbol">
-    <p class="texto1">Actualmente disponible solo en La Plata</p>
-    <a href="./pages/contacto.html">CONTACTO</a>
-    <ul class="linksFooter">
-        <li>
-            <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">Facebook</a>
-        </li>
-        
-        <li>
-            <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">Instagram</a>
-        </li>
-        
-        <li>
-            <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-        </li>
-    </ul>
-    
-    <p class="texto2">Copyright Todos los derechos reservados</p>
-</footer>
+    <footer class="footerContacto">
+        <p class="footer__textoDisponibilidad">Actualmente disponible solo en La Plata</p>
+        <a class="footer__linkContacto" href="../pages/contacto.html">CONTACTO</a>
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="https://www.facebook.com/tomas.deblasio/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    Facebook
+                </a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="https://www.instagram.com/tomasdeblasio/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Whatsapp
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer__textoCopyright">Copyright Todos los derechos reservados</p>
+    </footer>
 
 </body>
 
