@@ -1,0 +1,108 @@
+.headerContacto {
+
+    .header__menu {
+        .header__lista {
+            @include flex(space-around, center);
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            background-color: rgb(13, 11, 11);
+
+            &__link {
+                @include flex(center, center);
+                flex-grow: 1;
+                padding: 0.5rem 1rem;
+                transition: all 1s ease;
+
+                & a {
+                    @include link;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: rgb(255, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.separador {
+    color: rgb(32, 30, 30);
+}
+
+.formulario {
+    margin-bottom: 1rem;
+    font-family: $texto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%;
+    /* El contenedor se ajustará al ancho de la página */
+    margin: 0 auto;
+
+    /* Centrar el contenedor en la página */
+    &__item {
+        width: calc(25% - 20px);
+        /* Ajuste del ancho y espacio para el margen */
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+}
+
+    .boton {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.3s;
+}
+
+
+
+
+.footerContacto {
+    display: flex;
+    margin-top: 2rem;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    .footer__textoDisponibilidad {
+        font-family: $texto;
+        align-self: flex-start;
+    }
+
+    .footer__linkContacto {
+        @include link;
+        align-self: flex-start;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: rgb(203, 0, 0);
+        }
+
+    }
+
+    .footer__links {
+        align-self: flex-end;
+        transition: all 0.3s ease;
+
+        a {
+            @include link;
+
+            &:hover {
+                color: rgb(203, 0, 0);
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    color: white;
 }
 
 img {
@@ -16,3 +17,6 @@ img {
 @import "./utilities/mixins";
 @import "./views/home";
 @import "./views/futbol5";
+@import "./views/basquet";
+@import "./views/canchaF5";
+@import "./views/contacto";
